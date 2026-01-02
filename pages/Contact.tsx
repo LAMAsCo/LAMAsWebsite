@@ -79,8 +79,7 @@ const ContactPage: React.FC = () => {
                      <div>
                         <h3 className="font-bold text-lg mb-1">Location</h3>
                         <p className="opacity-60 text-sm">
-                           Based in San Francisco, CA.<br />
-                           Operating globally.
+                           Out of Chicago, IL.<br />
                         </p>
                      </div>
                   </div>

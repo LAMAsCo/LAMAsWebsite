@@ -85,7 +85,6 @@ const HomePage: React.FC = () => {
          {/* Hero Section */}
          <section className="text-center relative z-10">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white dark:bg-[#2A2E26] shadow-sm mb-8 animate-fade-in-up">
-               <Sprout className="w-4 h-4 text-[#D4A373]" />
                <span className="text-xs font-medium tracking-widest uppercase opacity-60">Luis Almeida</span>
             </div>
 
@@ -151,7 +150,7 @@ const HomePage: React.FC = () => {
                   The quiet guardian of your <span className="text-[#D4A373] italic">uptime</span>.
                </h2>
                <p className="text-lg opacity-70 leading-relaxed">
-                  PulseBoard isn't just a status page. It's a promise to your users. We monitor your API endpoints with the gentleness of a gardener and the precision of a clockmaker.
+                  PulseBoard isn't just a status page. It's a promise to your users. You'll get prompt notifications and reliable metrics and uptime monitoring for your apps, websites, and APIs.
                </p>
                <ul className="space-y-4 pt-4">
                   {[
