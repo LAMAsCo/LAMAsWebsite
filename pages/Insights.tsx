@@ -48,58 +48,69 @@ const InsightsPage: React.FC = () => {
             </p>
          </div>
 
-         <div className="grid md:grid-cols-2 gap-8">
-            {posts.map((post, index) => (
-               <Link to={`/insights/${post.slug}`} key={index} className="block group">
-                  <article className="h-full bg-white dark:bg-[#232620] rounded-[2.5rem] p-4 hover:shadow-lg transition-all duration-500 hover:-translate-y-2 border border-[#E5E7E1] dark:border-[#333] cursor-pointer">
-                     <div
-                        className={`h-64 rounded-[2rem] ${post.color} relative flex items-center justify-center mb-6 overflow-hidden isolate transform-gpu`}
-                        style={{ WebkitMaskImage: '-webkit-radial-gradient(white, black)' }}
-                     >
-                        {post.image ? (
-                           <img src={post.image} alt={post.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                        ) : (
-                           <div className="transform group-hover:scale-110 transition-transform duration-700">
-                              {post.icon}
+         {posts.length > 0 ? (
+            <>
+               <div className="grid md:grid-cols-2 gap-8">
+                  {posts.map((post, index) => (
+                     <Link to={`/insights/${post.slug}`} key={index} className="block group">
+                        <article className="h-full bg-white dark:bg-[#232620] rounded-[2.5rem] p-4 hover:shadow-lg transition-all duration-500 hover:-translate-y-2 border border-[#E5E7E1] dark:border-[#333] cursor-pointer">
+                           <div
+                              className={`h-64 rounded-[2rem] ${post.color} relative flex items-center justify-center mb-6 overflow-hidden isolate transform-gpu`}
+                              style={{ WebkitMaskImage: '-webkit-radial-gradient(white, black)' }}
+                           >
+                              {post.image ? (
+                                 <img src={post.image} alt={post.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                              ) : (
+                                 <div className="transform group-hover:scale-110 transition-transform duration-700">
+                                    {post.icon}
+                                 </div>
+                              )}
+                              <div className="absolute top-6 right-6 w-10 h-10 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                 <ArrowUpRight className="w-4 h-4 text-[#2C3E2D] dark:text-white" />
+                              </div>
                            </div>
-                        )}
-                        <div className="absolute top-6 right-6 w-10 h-10 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                           <ArrowUpRight className="w-4 h-4 text-[#2C3E2D] dark:text-white" />
-                        </div>
-                     </div>
 
-                     <div className="px-6 pb-6">
-                        <div className="flex justify-between items-center mb-4">
-                           <div className="flex gap-2 items-center text-xs font-serif italic text-[#D4A373]">
-                              <span>{post.category}</span>
-                              <span className="w-1 h-1 bg-current rounded-full opacity-40"></span>
-                              <span>{new Date(post.date).toLocaleDateString()}</span>
+                           <div className="px-6 pb-6">
+                              <div className="flex justify-between items-center mb-4">
+                                 <div className="flex gap-2 items-center text-xs font-serif italic text-[#D4A373]">
+                                    <span>{post.category}</span>
+                                    <span className="w-1 h-1 bg-current rounded-full opacity-40"></span>
+                                    <span>{new Date(post.date).toLocaleDateString()}</span>
+                                 </div>
+                                 <span className="text-[10px] font-medium uppercase tracking-widest opacity-40">{post.readTime}</span>
+                              </div>
+
+                              <h2 className="text-2xl font-serif mb-3 group-hover:text-[#D4A373] transition-colors">
+                                 {post.title}
+                              </h2>
+
+                              <p className="text-sm opacity-60 leading-relaxed mb-4">
+                                 {post.excerpt}
+                              </p>
+
+                              <div className="text-xs font-bold tracking-widest uppercase opacity-40 group-hover:opacity-100 transition-opacity">
+                                 Read Article
+                              </div>
                            </div>
-                           <span className="text-[10px] font-medium uppercase tracking-widest opacity-40">{post.readTime}</span>
-                        </div>
+                        </article>
+                     </Link>
+                  ))}
+               </div>
 
-                        <h2 className="text-2xl font-serif mb-3 group-hover:text-[#D4A373] transition-colors">
-                           {post.title}
-                        </h2>
-
-                        <p className="text-sm opacity-60 leading-relaxed mb-4">
-                           {post.excerpt}
-                        </p>
-
-                        <div className="text-xs font-bold tracking-widest uppercase opacity-40 group-hover:opacity-100 transition-opacity">
-                           Read Article
-                        </div>
-                     </div>
-                  </article>
-               </Link>
-            ))}
-         </div>
-
-         <div className="mt-20 text-center">
-            <button className="px-8 py-3 rounded-full border border-[#D4A373] text-[#D4A373] hover:bg-[#D4A373] hover:text-white transition-colors font-medium text-sm">
-               Load Older Posts
-            </button>
-         </div>
+               <div className="mt-20 text-center">
+                  <button className="px-8 py-3 rounded-full border border-[#D4A373] text-[#D4A373] hover:bg-[#D4A373] hover:text-white transition-colors font-medium text-sm">
+                     Load Older Posts
+                  </button>
+               </div>
+            </>
+         ) : (
+            <div className="flex justify-center py-20">
+               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#F3F4F1] dark:bg-[#2A2E26] shadow-sm border border-[#E5E7E1] dark:border-[#333]">
+                  <span className="w-2 h-2 rounded-full bg-[#D4A373] animate-pulse"></span>
+                  <span className="text-xs font-medium tracking-widest uppercase opacity-60">Coming Soon</span>
+               </div>
+            </div>
+         )}
 
       </div>
    );
