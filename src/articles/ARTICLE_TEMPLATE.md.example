@@ -1,0 +1,22 @@
+---
+title: "The Title of Your Article"
+category: "Philosophy" # Options: Design, Philosophy, Update, Engineering
+date: "2024-01-01"
+excerpt: "A brief summary that appears on the card (1-2 sentences)."
+image: "/images/articles/your-image.png" # Optional: Path to image in public folder
+---
+
+# Your Main Heading
+
+Write your content here using standard Markdown.
+
+## Subheading
+
+- Bullet point 1
+- Bullet point 2
+
+You can also use code blocks:
+
+```typescript
+console.log("Hello World");
+```
