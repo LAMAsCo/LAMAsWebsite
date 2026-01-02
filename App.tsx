@@ -163,7 +163,10 @@ const App: React.FC = () => {
     <ThemeContext.Provider value={{ isDark, toggleTheme }}>
       <HashRouter>
         <ScrollToTop />
-        <div className="min-h-screen bg-[#F3F4F1] dark:bg-[#1A1C18] text-[#2C3E2D] dark:text-[#E2E8D5] font-sans transition-colors duration-700 selection:bg-[#D4A373] selection:text-white flex flex-col">
+        <div className="min-h-screen text-[#2C3E2D] dark:text-[#E2E8D5] font-sans flex flex-col selection:bg-[#D4A373] selection:text-white">
+
+          {/* Background Layer */}
+          <div className="fixed inset-0 bg-[#F3F4F1] dark:bg-[#1A1C18] z-[-2] transition-colors duration-700"></div>
 
           {/* Global Organic Background Shapes */}
           <div className="fixed inset-0 overflow-hidden pointer-events-none z-[-1]">

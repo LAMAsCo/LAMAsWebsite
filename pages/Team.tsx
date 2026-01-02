@@ -8,7 +8,7 @@ const TeamPage: React.FC = () => {
          <div className="grid md:grid-cols-12 gap-12 items-start mt-12">
 
             {/* Profile Column */}
-            <div className="md:col-span-5 sticky top-32">
+            <div className="md:col-span-5 md:sticky md:top-32">
                <div className="aspect-[3/4] rounded-2xl bg-[#E5E7E1] dark:bg-[#2A2E26] overflow-hidden relative mb-8 border border-black/5 dark:border-white/5 shadow-sm">
                   {/* 
                   TODO: Place your profile image here.
