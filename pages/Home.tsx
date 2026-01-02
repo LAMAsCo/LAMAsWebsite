@@ -86,16 +86,16 @@ const HomePage: React.FC = () => {
          <section className="text-center relative z-10">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white dark:bg-[#2A2E26] shadow-sm mb-8 animate-fade-in-up">
                <Sprout className="w-4 h-4 text-[#D4A373]" />
-               <span className="text-xs font-medium tracking-widest uppercase opacity-60">Luis Afonso Meira Almeida</span>
+               <span className="text-xs font-medium tracking-widest uppercase opacity-60">Luis Almeida</span>
             </div>
 
             <h1 className="font-serif text-6xl md:text-7xl mb-8 leading-tight animate-fade-in-up delay-100">
-               Cultivating my <br />
-               <span className="italic text-[#D4A373]">digital ecosystem</span>
+               Always <br />
+               <span className="italic text-[#D4A373]">Learning & Building</span>
             </h1>
 
             <p className="max-w-2xl mx-auto text-lg md:text-xl opacity-70 mb-12 leading-relaxed animate-fade-in-up delay-200">
-               Hi, I'm Luis. I'm a full-stack engineer and designer. LAMAs is my personal garden for thoughts on software, and PulseBoard is the infrastructure that keeps it alive.
+               Hi, I'm Luis. I'm a hobbyist developer and engineer. Welcome to LAMAs, where I intend on sharing my takes on software, tech, and personal projects like PulseBoard.
             </p>
 
             <div className="flex flex-wrap justify-center gap-6 animate-fade-in-up delay-300">
@@ -135,10 +135,13 @@ const HomePage: React.FC = () => {
 
                   <div className="space-y-2">
                      <div className="flex items-center gap-2 text-white/90">
-                        <CheckCircle className="w-4 h-4" /> <span>99.99% Uptime Guarantee</span>
+                        <CheckCircle className="w-4 h-4" /> <span>Performance Metrics</span>
                      </div>
                      <div className="flex items-center gap-2 text-white/90">
-                        <CheckCircle className="w-4 h-4" /> <span>Real-time Endpoints</span>
+                        <CheckCircle className="w-4 h-4" /> <span>Real-time Checks & Alerts</span>
+                     </div>
+                     <div className="flex items-center gap-2 text-white/90">
+                        <CheckCircle className="w-4 h-4" /> <span>Minimal Overhead</span>
                      </div>
                   </div>
                </div>
@@ -154,7 +157,7 @@ const HomePage: React.FC = () => {
                   {[
                      "Minimal overhead monitoring",
                      "Beautiful, public status pages",
-                     "Instant alerts via Email & Slack"
+                     "Instant alerts via Email"
                   ].map((item, i) => (
                      <li key={i} className="flex items-center gap-3 font-medium">
                         <div className="w-6 h-6 rounded-full bg-[#D4A373]/20 flex items-center justify-center text-[#D4A373]">
@@ -165,8 +168,8 @@ const HomePage: React.FC = () => {
                   ))}
                </ul>
                <div className="pt-6">
-                  <a href="#" className="text-[#D4A373] font-bold tracking-widest uppercase text-xs border-b border-[#D4A373] pb-1 hover:opacity-70 transition-opacity">
-                     View Live Demo
+                  <a href="https://pulseboard.lamas-co.com/docs" target="_blank" rel="noopener noreferrer" className="text-[#D4A373] font-bold tracking-widest uppercase text-xs border-b border-[#D4A373] pb-1 hover:opacity-70 transition-opacity">
+                     View Documentation
                   </a>
                </div>
             </div>
@@ -182,7 +185,7 @@ const HomePage: React.FC = () => {
                <Mail className="w-12 h-12 mx-auto text-[#D4A373] mb-6" />
                <h2 className="font-serif text-3xl md:text-4xl mb-4">Grow with us.</h2>
                <p className="opacity-60 mb-8">
-                  Join 5,000+ creators and engineers receiving our weekly digest on digital minimalism and resilient infrastructure.
+                  Join me as I build LAMAs & PulseBoard.
                </p>
 
                <form className="flex flex-col md:flex-row gap-4" onSubmit={handleNewsletterSubmit}>

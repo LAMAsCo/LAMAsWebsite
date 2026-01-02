@@ -121,12 +121,11 @@ const Footer = () => (
       <div className="text-center md:text-left">
         <span className="font-serif italic text-xl font-bold tracking-wide text-[#2C3E2D] dark:text-[#E2E8D5] block mb-2">LAMAs</span>
         <p className="text-xs text-[#2C3E2D]/60 dark:text-[#E2E8D5]/60">
-          © {new Date().getFullYear()} LAMAs. Cultivating digital resilience.
+          © {new Date().getFullYear()} Luis Almeida.
         </p>
       </div>
       <div className="flex gap-6 text-[#2C3E2D]/60 dark:text-[#E2E8D5]/60">
-        <a href="#" className="hover:text-[#D4A373] transition-colors"><span className="sr-only">Twitter</span>Twitter</a>
-        <a href="#" className="hover:text-[#D4A373] transition-colors"><span className="sr-only">GitHub</span>GitHub</a>
+        <a href="https://github.com/lamalmeida" className="hover:text-[#D4A373] transition-colors"><span className="sr-only">GitHub</span>GitHub</a>
         <a href="#" className="hover:text-[#D4A373] transition-colors flex items-center gap-1">Made with <Heart className="w-3 h-3" /></a>
       </div>
     </div>
