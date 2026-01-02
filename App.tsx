@@ -145,7 +145,9 @@ const Footer = () => {
 };
 
 const App: React.FC = () => {
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(() =>
+    typeof window !== 'undefined' && window.matchMedia('(prefers-color-scheme: dark)').matches
+  );
 
   useEffect(() => {
     if (isDark) {
