@@ -115,22 +115,44 @@ const NavBar = () => {
   );
 };
 
-const Footer = () => (
-  <footer className="relative z-10 py-12 border-t border-black/5 dark:border-white/5 mt-auto">
-    <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
-      <div className="text-center md:text-left">
-        <span className="font-serif italic text-xl font-bold tracking-wide text-[#2C3E2D] dark:text-[#E2E8D5] block mb-2">LAMAs</span>
-        <p className="text-xs text-[#2C3E2D]/60 dark:text-[#E2E8D5]/60">
-          © {new Date().getFullYear()} Luis Almeida.
-        </p>
+const Footer = () => {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = "https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js";
+    script.dataset.name = "bmc-button";
+    script.dataset.slug = "lama.s";
+    script.dataset.color = "#d4a373";
+    script.dataset.emoji = "☕";
+    script.dataset.font = "Cookie";
+    script.dataset.text = "Buy me a coffee";
+    script.dataset.outlineColor = "#000000";
+    script.dataset.fontColor = "#000000";
+    script.dataset.coffeeColor = "#FFDD00";
+    script.async = true;
+
+    const container = document.getElementById('bmc-container');
+    if (container && !container.querySelector('script')) {
+      container.appendChild(script);
+    }
+  }, []);
+
+  return (
+    <footer className="relative z-10 py-12 border-t border-black/5 dark:border-white/5 mt-auto">
+      <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+        <div className="text-center md:text-left">
+          <span className="font-serif italic text-xl font-bold tracking-wide text-[#2C3E2D] dark:text-[#E2E8D5] block mb-2">LAMAs</span>
+          <p className="text-xs text-[#2C3E2D]/60 dark:text-[#E2E8D5]/60">
+            © {new Date().getFullYear()} Luis Almeida.
+          </p>
+        </div>
+        <div className="flex gap-6 text-[#2C3E2D]/60 dark:text-[#E2E8D5]/60 items-center">
+          <a href="https://github.com/lamalmeida" className="hover:text-[#D4A373] transition-colors"><span className="sr-only">GitHub</span>GitHub</a>
+          <div id="bmc-container" className="h-10 flex items-center"></div>
+        </div>
       </div>
-      <div className="flex gap-6 text-[#2C3E2D]/60 dark:text-[#E2E8D5]/60">
-        <a href="https://github.com/lamalmeida" className="hover:text-[#D4A373] transition-colors"><span className="sr-only">GitHub</span>GitHub</a>
-        <a href="#" className="hover:text-[#D4A373] transition-colors flex items-center gap-1">Made with <Heart className="w-3 h-3" /></a>
-      </div>
-    </div>
-  </footer>
-);
+    </footer>
+  );
+};
 
 const App: React.FC = () => {
   const [isDark, setIsDark] = useState(false);
