@@ -7,7 +7,8 @@ const ContactPage: React.FC = () => {
    const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
       setResult("Sending....");
-      const formData = new FormData(event.currentTarget);
+      const form = event.currentTarget;
+      const formData = new FormData(form);
 
       const accessKey = import.meta.env.VITE_WEB3FORMS_KEY;
 
@@ -28,7 +29,7 @@ const ContactPage: React.FC = () => {
 
       if (data.success) {
          setResult("Form Submitted Successfully");
-         event.currentTarget.reset();
+         form.reset();
       } else {
          console.log("Error", data);
          setResult(data.message);
