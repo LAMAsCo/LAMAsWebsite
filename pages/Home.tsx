@@ -82,24 +82,25 @@ const HomePage: React.FC = () => {
       <div className="max-w-6xl mx-auto space-y-32">
 
          {/* Hero Section */}
+         {/* Hero Section */}
          <section className="text-center relative z-10">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white dark:bg-[#2A2E26] shadow-sm mb-8 animate-fade-in-up">
                <Sprout className="w-4 h-4 text-[#D4A373]" />
-               <span className="text-xs font-medium tracking-widest uppercase opacity-60">Digital Wellness</span>
+               <span className="text-xs font-medium tracking-widest uppercase opacity-60">Luis Afonso Meira Almeida</span>
             </div>
 
-            <h1 className="font-serif text-6xl md:text-8xl mb-8 leading-tight animate-fade-in-up delay-100">
-               Nurture your <br />
+            <h1 className="font-serif text-6xl md:text-7xl mb-8 leading-tight animate-fade-in-up delay-100">
+               Cultivating my <br />
                <span className="italic text-[#D4A373]">digital ecosystem</span>
             </h1>
 
             <p className="max-w-2xl mx-auto text-lg md:text-xl opacity-70 mb-12 leading-relaxed animate-fade-in-up delay-200">
-               LAMAs provides the fertile ground for your content to grow, while PulseBoard quietly tends to the roots of your infrastructure.
+               Hi, I'm Luis. I'm a full-stack engineer and designer. LAMAs is my personal garden for thoughts on software, and PulseBoard is the infrastructure that keeps it alive.
             </p>
 
             <div className="flex flex-wrap justify-center gap-6 animate-fade-in-up delay-300">
                <Link to="/insights" className="px-10 py-4 bg-[#2C3E2D] dark:bg-[#E2E8D5] text-white dark:text-[#1A1C18] rounded-full shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 font-medium flex items-center gap-2">
-                  Begin Reading <Feather className="w-4 h-4" />
+                  Read My Thoughts <Feather className="w-4 h-4" />
                </Link>
 
                <a href="https://pulseboard.lamas-co.com" target="_blank" rel="noopener noreferrer" className="px-10 py-4 bg-white dark:bg-[#2A2E26] rounded-full shadow-sm border border-[#E5E7E1] dark:border-[#333] hover:bg-[#F3F4F1] dark:hover:bg-[#333] transition-colors duration-300 font-medium text-[#D4A373]">

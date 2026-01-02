@@ -41,7 +41,7 @@ const NavBar = () => {
 
         {/* Logo */}
         <Link to="/" className="font-serif italic text-2xl font-bold tracking-wide text-[#2C3E2D] dark:text-[#E2E8D5] z-50">
-          lamas
+          LAMAs
         </Link>
 
         {/* Desktop Nav */}
@@ -119,7 +119,7 @@ const Footer = () => (
   <footer className="relative z-10 py-12 border-t border-black/5 dark:border-white/5 mt-auto">
     <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
       <div className="text-center md:text-left">
-        <span className="font-serif italic text-xl font-bold tracking-wide text-[#2C3E2D] dark:text-[#E2E8D5] block mb-2">lamas</span>
+        <span className="font-serif italic text-xl font-bold tracking-wide text-[#2C3E2D] dark:text-[#E2E8D5] block mb-2">LAMAs</span>
         <p className="text-xs text-[#2C3E2D]/60 dark:text-[#E2E8D5]/60">
           © {new Date().getFullYear()} LAMAs. Cultivating digital resilience.
         </p>
