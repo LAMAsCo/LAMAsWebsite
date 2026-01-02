@@ -46,6 +46,10 @@ const HomePage: React.FC = () => {
       setIsSubmitting(true);
       setMessage('');
 
+      // Debug: Log key presence (first 4 chars for safety)
+      const key = import.meta.env.VITE_WEB3FORMS_KEY;
+      console.log("Web3Forms Key present:", !!key, "First 4 chars:", key ? key.substring(0, 4) : "N/A");
+
       try {
          const response = await fetch('https://api.web3forms.com/submit', {
             method: 'POST',
