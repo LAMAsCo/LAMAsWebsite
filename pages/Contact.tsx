@@ -68,7 +68,7 @@ const ContactPage: React.FC = () => {
                      <div>
                         <h3 className="font-bold text-lg mb-1">Email Me</h3>
                         <p className="opacity-60 text-sm mb-2">For general inquiries and partnerships.</p>
-                        <a href="mailto:hello@lamas.com" className="text-[#D4A373] hover:underline">hello@lamas.com</a>
+                        <a href="mailto:hello@lamas-co.com" className="text-[#D4A373] hover:underline">hello@lamas-co.com</a>
                      </div>
                   </div>
 
