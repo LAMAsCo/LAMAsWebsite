@@ -38,6 +38,12 @@ const InsightsPage: React.FC = () => {
       });
    }, []);
 
+   const [visibleCount, setVisibleCount] = React.useState(6);
+
+   const loadMore = () => {
+      setVisibleCount(prev => prev + 6);
+   };
+
    return (
       <div className="max-w-6xl mx-auto">
 
@@ -51,7 +57,7 @@ const InsightsPage: React.FC = () => {
          {posts.length > 0 ? (
             <>
                <div className="grid md:grid-cols-2 gap-8">
-                  {posts.map((post, index) => (
+                  {posts.slice(0, visibleCount).map((post, index) => (
                      <Link to={`/insights/${post.slug}`} key={index} className="block group">
                         <article className="h-full bg-white dark:bg-[#232620] rounded-[2.5rem] p-4 hover:shadow-lg transition-all duration-500 hover:-translate-y-2 border border-[#E5E7E1] dark:border-[#333] cursor-pointer">
                            <div
@@ -97,11 +103,16 @@ const InsightsPage: React.FC = () => {
                   ))}
                </div>
 
-               <div className="mt-20 text-center">
-                  <button className="px-8 py-3 rounded-full border border-[#D4A373] text-[#D4A373] hover:bg-[#D4A373] hover:text-white transition-colors font-medium text-sm">
-                     Load Older Posts
-                  </button>
-               </div>
+               {posts.length > visibleCount && (
+                  <div className="mt-20 text-center">
+                     <button
+                        onClick={loadMore}
+                        className="px-8 py-3 rounded-full border border-[#D4A373] text-[#D4A373] hover:bg-[#D4A373] hover:text-white transition-colors font-medium text-sm"
+                     >
+                        Load Older Posts
+                     </button>
+                  </div>
+               )}
             </>
          ) : (
             <div className="flex justify-center py-20">
