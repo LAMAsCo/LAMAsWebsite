@@ -37,7 +37,7 @@ const parseFrontmatter = (text: string) => {
 export const getArticles = (): Article[] => {
     // Use Vite's import.meta.glob to load all markdown files in the articles directory
     // Relative path to src/articles from src/lib is ../articles
-    const modules = import.meta.glob('../articles/*.md', { query: '?raw', import: 'default', eager: true });
+    const modules = import.meta.glob('../articles/**/*.md', { query: '?raw', import: 'default', eager: true });
 
     const articles: Article[] = [];
 

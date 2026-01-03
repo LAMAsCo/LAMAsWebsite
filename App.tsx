@@ -40,8 +40,8 @@ const NavBar = () => {
       <div className="max-w-6xl mx-auto flex justify-between items-center bg-white/60 dark:bg-[#1A1C18]/60 backdrop-blur-xl rounded-full px-6 py-3 shadow-sm border border-white/40 dark:border-white/5 transition-all duration-300">
 
         {/* Logo */}
-        <Link to="/" className="font-serif italic text-2xl font-bold tracking-wide text-[#2C3E2D] dark:text-[#E2E8D5] z-50">
-          LAMAs
+        <Link to="/" className="z-50 flex items-center">
+          <img src="/images/LA_Logo.png" alt="LAMAs Logo" className="h-8 md:h-10 w-auto" />
         </Link>
 
         {/* Desktop Nav */}
