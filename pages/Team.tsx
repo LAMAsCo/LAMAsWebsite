@@ -16,7 +16,7 @@ const TeamPage: React.FC = () => {
                   2. Uncomment the img tag below
                */}
                   {
-                     <img src="/images/profile.jpeg" alt="Luis Almeida" className="w-full h-full object-cover" />}
+                     <img src="/images/profile.jpeg?v=2" alt="Luis Almeida" className="w-full h-full object-cover" />}
 
                </div>
 
