@@ -3,7 +3,7 @@ title: "Launching LAMAs and PulseBoard"
 category: "Update"
 date: "2026-01-03"
 excerpt: "LAMAs is live! My space to think and build in public. My first project, PulseBoard, got a UI redesign and is now live too!"
-image: "/images/articles/pulseboard-launch.png"
+image: "/images/articles/lamas-launch.png"
 ---
 
 # Why LAMAs Exists and Why I’m Building PulseBoard
@@ -42,6 +42,8 @@ Under the hood, it’s built with security and practicality in mind: Supabase, e
 
 It’s intentionally simple. The goal isn’t to compete with enterprise platforms. It’s to give solo developers and small teams a clear signal when something goes wrong. 
 
+![Image Description](/images/articles/pulseboard-launch.png)
+
 ## What LAMAs is
 
 LAMAs is my notebook, published.
@@ -53,8 +55,6 @@ It’s where I will write my thoughts, in short, direct pieces about:
 * Design decisions, mistakes, and revisions.
 
 Some posts will be rough. Some will be opinionated. All of them are meant to be useful, honest, and invite criticism.
-
-![Image Description](/images/articles/lamas-launch.png)
 
 ## Why build this publicly
 
