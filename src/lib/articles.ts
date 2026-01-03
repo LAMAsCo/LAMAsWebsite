@@ -55,8 +55,8 @@ export const getArticles = (): Article[] => {
             date: data.date || new Date().toISOString(),
             excerpt: data.excerpt || '',
             content: content,
-            readTime: '5 min read', // Placeholder or calculation logic
-            ...data,
+            readTime: '5 min read', // Default fallback
+            ...data, // Frontmatter overrides default
         });
     }
 

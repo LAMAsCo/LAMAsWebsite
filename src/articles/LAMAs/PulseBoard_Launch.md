@@ -4,74 +4,54 @@ category: "Update"
 date: "2026-01-03"
 excerpt: "LAMAs is live! My space to think and build in public. My first project, PulseBoard, got a UI redesign and is now live too!"
 image: "/images/articles/lamas-launch.png"
+readTime: "3 min read"
 ---
 
 # Why LAMAs Exists and Why I’m Building PulseBoard
 
 I wanted a place to think clearly in public, and a project that forced me to apply what I’m learning instead of just reading about it.
 
-LAMAs is the writing.
-PulseBoard is the work.
+LAMAs is the writing part and PulseBoard is the working part. They coexist intentionally.
 
-They exist to force me to execute and take action.
+This isn’t about shipping something polished or positioning myself as an expert. It’s about making the process visible: the decisions that seem obvious in retrospect, the compromises that don't have neat solutions, and the things that get broken before they are functional.
 
-## The real goal
+## Why do this at all
 
-This isn’t about shipping something perfect or pretending I have everything figured out. My goal is to take more risks and break things. It’s about showing the full process, the decisions, the trade‑offs, and slowly build towards better skills, projects, and writing.
+I, like many of you, learn much faster when there is friction and accountability. Public building is a way of creating both.
 
-I learn faster when there’s friction and accountability. Building in public creates both.
+Writing is a process that makes me slow down and put my thoughts into words, while shipping makes me care about reliability and user experience. Together they transform vague ideas into something real.
 
-The goals are simple:
+LAMAs exists as a space to capture that thinking while it’s still forming.
 
-* Build tools that are immediately useful.
-* Get feedback early and improve fast.
-* Do it in public.
+![LAMAs notebook and writing](/images/articles/lamas-launch.png)
 
 ## What PulseBoard is
 
-PulseBoard is a lightweight uptime monitoring tool for apps, websites, and APIs.
+PulseBoard is a lightweight uptime monitoring tool for apps, websites, and APIs that focuses on the basics done well. Health checks run on a predictable cadence. Alerts are proactive but restrained. 
+I'm now improving on dashboards to show clearly what’s broken, when it broke, and how long it stayed that way.
 
-It focuses on the basics done well:
+In the background, it is intentionally monotonous in the right ways. Supabase for authentication and data, encrypted passwords, HTTPS always on, and row-level security as a default. The objective here is not to confront the enterprise platforms nor to keep up with the feature checklists. The goal is to be relevant to lone developers and small teams who only want clarity when something goes wrong. 
 
-* Automated health checks.
-* Email alerts that are proactive without being noisy.
-* Response time tracking and historical performance trends.
-* Simple dashboards that tell you what’s broken and when.
+![PulseBoard dashboard overview](/images/articles/pulseboard-launch.png)
 
-Under the hood, it’s built with security and practicality in mind: Supabase, encrypted credentials, HTTPS everywhere, and row‑level security by default.
+## What LAMAs is for
 
-It’s intentionally simple. The goal isn’t to compete with enterprise platforms. It’s to give solo developers and small teams a clear signal when something goes wrong. 
+Tools alone aren't the whole point. LAMAs is to learn and share as a published notebook.
 
-![Image Description](/images/articles/pulseboard-launch.png)
+It’s where I write down short, direct pieces about what I’m learning while building PulseBoard, along with broader thoughts on software, design decisions, and practical engineering. Some posts will be rough, others opinions, but the goal is to only share honest ideas.
 
-## What LAMAs is
+## Why this is public
 
-LAMAs is my notebook, published.
+Doing this publicly is a forcing function.
 
-It’s where I will write my thoughts, in short, direct pieces about:
+Pressure creates clarity. Feedback exposes blind spots. Collaboration only happens when there’s something real for other people to react to.
 
-* What I’m learning while building PulseBoard.
-* Any tech related developments I find interesting.
-* Design decisions, mistakes, and revisions.
+This setup keeps me honest and moving forward.
 
-Some posts will be rough. Some will be opinionated. All of them are meant to be useful, honest, and invite criticism.
+## What comes next
 
-## Why build this publicly
+Nothing showy. Just consistent enhancement.
 
-Because pressure creates clarity. I've built a lot in private through education and personal projects. 
+PulseBoard will have improved dashboards, tighter account management, and reliability features that are indeed needed. LAMAs will keep on documenting the entire process: what was successful, what was not, and the reasons behind some of the choices.
 
-Writing forces me to explain things clearly. Shipping publicly forces me to care about reliability and user experience. Feedback exposes blind spots I wouldn’t find on my own.
-
-More importantly, collaboration only happens when there’s something real to react to.
-
-## What’s coming next
-
-Nothing flashy. Just steady improvement.
-
-* Better control over settings and status pages in PulseBoard.
-* More reliability features where they actually matter.
-* Essays on the progress, design, and engineering
-
-If any of this resonates, follow along, send feedback, or try PulseBoard.
-
-I’m here to learn fast, build useful things, and work with people who care about shipping.
+If any of this is relatable, then give PulseBoard a try and leave your feedback. I am here to learn fast, create useful stuff, and to collaborate with the people who are interested in shipping.

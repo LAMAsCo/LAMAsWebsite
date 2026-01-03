@@ -62,7 +62,24 @@ const ArticlePage: React.FC = () => {
             </header>
 
             <div className="prose dark:prose-invert prose-lg max-w-none prose-headings:font-serif prose-headings:font-normal prose-a:text-[#D4A373] prose-a:no-underline hover:prose-a:underline prose-img:rounded-[2rem] prose-img:shadow-lg">
-                <Markdown>
+                <Markdown
+                    components={{
+                        img: ({ node, ...props }) => (
+                            <figure className="my-8">
+                                <img
+                                    {...props}
+                                    className="rounded-[2rem] shadow-lg w-full"
+                                    alt={props.alt}
+                                />
+                                {props.alt && (
+                                    <figcaption className="text-center text-sm mt-3 opacity-60 font-serif italic">
+                                        {props.alt}
+                                    </figcaption>
+                                )}
+                            </figure>
+                        )
+                    }}
+                >
                     {article.content}
                 </Markdown>
             </div>
