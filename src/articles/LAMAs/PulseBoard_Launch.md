@@ -6,16 +6,15 @@ excerpt: "LAMAs is live! My space to think and build in public. My first project
 image: "/images/articles/lamas-launch.png"
 readTime: "3 min read"
 ---
-
 # Why LAMAs Exists and Why I’m Building PulseBoard
 
-I wanted a place to think clearly in public, and a project that forced me to apply what I’m learning instead of just reading about it.
+These project achieve two things. LAMAs gives me a place I control to think clearly in public, and PulseBoard gives me a project that I'm accountable for. 
 
-LAMAs is the writing part and PulseBoard is the working part. They coexist intentionally.
+LAMAs is the writing part, and PulseBoard is the working part. They coexist intentionally.
 
-This isn’t about shipping something polished or positioning myself as an expert. It’s about making the process visible: the decisions that seem obvious in retrospect, the compromises that don't have neat solutions, and the things that get broken before they are functional.
+I am no expert, and I am  a long way  off from ever being one,  but I want to ship stuff, learn quickly, and do so visibly. LAMAs will let me share the decisions that seem obvious, the weird tradeoffs, and the things that get broken before they are functional. 
 
-## Why do this at all
+## Why Do This at All
 
 I, like many of you, learn much faster when there is friction and accountability. Public building is a way of creating both.
 
@@ -25,22 +24,23 @@ LAMAs exists as a space to capture that thinking while it’s still forming.
 
 ![LAMAs notebook and writing](/images/articles/lamas-launch.png)
 
-## What PulseBoard is
+## What PulseBoard Is
 
 PulseBoard is a lightweight uptime monitoring tool for apps, websites, and APIs that focuses on the basics done well. Health checks run on a predictable cadence. Alerts are proactive but restrained. 
+
 I'm now improving on dashboards to show clearly what’s broken, when it broke, and how long it stayed that way.
 
-In the background, it is intentionally monotonous in the right ways. Supabase for authentication and data, encrypted passwords, HTTPS always on, and row-level security as a default. The objective here is not to confront the enterprise platforms nor to keep up with the feature checklists. The goal is to be relevant to lone developers and small teams who only want clarity when something goes wrong. 
+In the background, it is intentionally monotonous in the right ways. Supabase for authentication and data, encrypted passwords, HTTPS always on, and row-level security as a default. I have no shot at confronting the enterprise platforms, and I won't be able to keep up with their feature checklists. The goal is to become relevant to small teams who only want clarity when something goes wrong. 
 
 ![PulseBoard dashboard overview](/images/articles/pulseboard-launch.png)
 
-## What LAMAs is for
+## What LAMAs Is For
 
 Tools alone aren't the whole point. LAMAs is to learn and share as a published notebook.
 
-It’s where I write down short, direct pieces about what I’m learning while building PulseBoard, along with broader thoughts on software, design decisions, and practical engineering. Some posts will be rough, others opinions, but the goal is to only share honest ideas.
+It’s where I write down short, direct pieces about what I’m learning while building PulseBoard, along with wider thoughts on software, design decisions, and practical engineering. Some posts will be rough, others opinions, but the goal is to only share honest ideas.
 
-## Why this is public
+## Why This Is Public
 
 Doing this publicly is a forcing function.
 
@@ -48,7 +48,7 @@ Pressure creates clarity. Feedback exposes blind spots. Collaboration only happe
 
 This setup keeps me honest and moving forward.
 
-## What comes next
+## What Comes Next
 
 Nothing showy. Just consistent enhancement.
 
