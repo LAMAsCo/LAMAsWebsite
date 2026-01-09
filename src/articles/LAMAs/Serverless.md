@@ -1,7 +1,7 @@
 ---
 title: "Why I Left Serverless for Oracle Cloud"
 category: "Engineering"
-date: "2026-01-03"
+date: "2026-01-08"
 excerpt: "To achieve sub-minute uptime monitoring in PulseBoard, I hit the limits of serverless and migrated the backend to an always-on Oracle Cloud VPS. Here’s what broke, what worked, and what I’d do differently."
 image: "/images/articles/Vercel_FluidActiveCPU.png"
 readTime: "4 min read"
