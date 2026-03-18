@@ -66,14 +66,6 @@ const NavBar = () => {
           >
             {isDark ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
           </button>
-          <a
-            href="https://pulseboard.lamas-co.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-5 py-2 bg-[#2C3E2D] dark:bg-[#E2E8D5] text-white dark:text-[#1A1C18] rounded-full text-xs font-bold tracking-widest uppercase hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 flex items-center gap-2"
-          >
-            PulseBoard <ArrowUpRight className="w-3 h-3" />
-          </a>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -103,12 +95,6 @@ const NavBar = () => {
               {link.label}
             </Link>
           ))}
-          <a
-            href="https://pulseboard.lamas-co.com"
-            className="text-lg font-bold text-[#D4A373] flex items-center gap-2"
-          >
-            Visit PulseBoard <ArrowUpRight className="w-5 h-5" />
-          </a>
         </div>
       )}
     </nav>

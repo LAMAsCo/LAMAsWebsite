@@ -28,9 +28,6 @@ const TeamPage: React.FC = () => {
                      <a href="https://github.com/lamalmeida" target="_blank" rel="noreferrer" className="p-2 rounded-lg bg-white dark:bg-[#232620] hover:text-[#D4A373] transition-colors border border-black/5 dark:border-white/5">
                         <Code className="w-5 h-5" />
                      </a>
-                     <a href="https://pulseboard.lamas-co.com" target="_blank" rel="noreferrer" className="p-2 rounded-lg bg-white dark:bg-[#232620] hover:text-[#D4A373] transition-colors border border-black/5 dark:border-white/5">
-                        <Globe className="w-5 h-5" />
-                     </a>
                   </div>
                </div>
             </div>
@@ -44,7 +41,7 @@ const TeamPage: React.FC = () => {
                   </h1>
                   <div className="space-y-6 text-lg opacity-80 leading-relaxed font-light">
                      <p>
-                        I'm Luis, the engineer and designer behind LAMAs and PulseBoard. I am learning and working towards building better backend systems and intuitive, calm user interfaces.
+                        I'm Luis, the engineer and designer behind LAMAs. I am learning and working towards building better backend systems and intuitive, calm user interfaces.
                      </p>
                      <p>
                         In an era of noisy software and constant notifications, I am building tools that just work. Whether it's a personal blog or an uptime monitor, details matter to me.

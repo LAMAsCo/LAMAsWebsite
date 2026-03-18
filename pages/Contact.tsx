@@ -56,7 +56,7 @@ const ContactPage: React.FC = () => {
                <div>
                   <h1 className="font-serif text-5xl md:text-7xl mb-6">Let's <span className="text-[#D4A373] italic">talk</span>.</h1>
                   <p className="text-xl opacity-70">
-                     Whether you have a question about PulseBoard, want to collaborate on a project, or just want to say hi.
+                     Whether you want to collaborate on a project, or just want to say hi.
                   </p>
                </div>
 

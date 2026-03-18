@@ -9,13 +9,6 @@ export default defineConfig(({ mode }) => {
     server: {
       port: 3000,
       host: '0.0.0.0',
-      proxy: {
-        '/api-proxy': {
-          target: 'https://api.pulseboard.lamas-co.com',
-          changeOrigin: true,
-          rewrite: (path) => path.replace(/^\/api-proxy/, ''),
-        },
-      },
     },
     plugins: [react()],
     define: {
